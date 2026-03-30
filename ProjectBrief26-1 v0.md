@@ -125,12 +125,14 @@
 | (1) 과제명 |  CLIP-RD : Relative Distillation for Efficient CLIP Knowledge Distillation |
 |:---  |---  |
 | (2) 팀 번호/이름 | 06-브라우니 |
-| (3) 구성원 | 정진이(2031054): 리더,*역할,...* <br> 양인경(2276188): 팀원,*역할,....* <br> 장한나(2129032): 팀원,*역할,....* |
+| (3) 구성원 | 정진이(2031054): 리더, 발표, 계획 수립, 자료 제작
+양인경(2276188): 팀원, 발표, 실험 진행, 서버 세팅
+장한나(2129032): 팀원, 발표, 면담 진행, 실험 설계 |
 | (4) 지도교수 | 심재형 교수 |
 | (5) 트랙  | 연구 |
 | (6) 과제 키워드 | Vision-Language Model, Efficient Deep Learning, Knowledge Distillation, Multimodal Model, CLIP-KD, Relation Distillation |
-| (7) 과제 내용 요약 |   |
-| (8) 주요 Link |  |
+| (7) 과제 내용 요약 | 대표적인 Vision Language Model인 CLIP(Contrastive Language-Image Pre-training) 모델을 Knowledge Distillation의 방법으로 경량화를 하고자 한다. 선행 연구인 CLIP-KD는 Feature Distillation, Interactive Contrastive Learning, 그리고 Contrastive Relational Distillation(Horizontal Relational Distillation)을 통해 이미지-텍스트 간 유사도 분포를 정렬하지만, 단방향 관계 정렬에 한계가 있다. 이를 해결하기 위해 CLIP-Relational Distillation(RD)를 제안하며, Vertical Relational Distillation(VRD)와 Cross Relational Distillation(XRD)를 통해 teacher-student 및 modality 간 관계를 다뱡향으로 정렬한다. 수평, 수직, 교차 관계를 통합적으로 정렬함으로써, 경량화된 모델의 표현 정합성과 일반화 성능을 향상시켰다. |
+| (8) 주요 Link | [GitHub GitHub - Rosieyang01/CLIP-RD](https://github.com/Rosieyang01/CLIP-RD) |
  
 <br>
  
