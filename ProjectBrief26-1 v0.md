@@ -129,7 +129,21 @@
 | (4) 지도교수 | 심재형 교수 |
 | (5) 트랙  | 연구 |
 | (6) 과제 키워드 | Vision-Language Model, Efficient Deep Learning, Knowledge Distillation, Multimodal Model, CLIP-KD, Relation Distillation |
-| (7) 과제 내용 요약 | 대표적인 Vision Language Model인 CLIP(Contrastive Language-Image Pre-training) 모델을 Knowledge Distillation의 방법으로 경량화를 하고자 한다. 선행 연구인 CLIP-KD는 Feature Distillation, Interactive Contrastive Learning, 그리고 Contrastive Relational Distillation(Horizontal Relational Distillation)을 통해 이미지-텍스트 간 유사도 분포를 정렬하지만, 단방향 관계 정렬에 한계가 있다. 이를 해결하기 위해 CLIP-Relational Distillation(RD)를 제안하며, Vertical Relational Distillation(VRD)와 Cross Relational Distillation(XRD)를 통해 teacher-student 및 modality 간 관계를 다뱡향으로 정렬한다. 수평, 수직, 교차 관계를 통합적으로 정렬함으로써, 경량화된 모델의 표현 정합성과 일반화 성능을 향상시켰다. |
+| (7) 과제 내용 요약 | **[연구 목표]**<br>
+
+대표적인 Vision-Language Model인 CLIP(Contastive Language-Image Pre-training) 은 뛰어난 일반화 성능을 보이지만, 대규모 아키텍처로 인해 높은 연산 자원을 요구하며, 이로 인해 다양한 분야에서의 실용적 활용에 있어 큰 걸림돌이 되고 있다. 이에 따라 CLIP을 경량화하고자 하는 수요가 높아지고 있어, CLIP 모델을 Knowledge Distillation의 방법으로 경량화한 모델을 만드는 것을 본 프로젝트의 주된 목표로 정의하였다. <br>
+
+**[제안]** <br>
+
+선행 연구인 CLIP-KD는 Feature Distillation, Interactive Contrastive Learning, 그리고 Contrastive Relational Distillation(Horizontal Relational Distillation)을 통해 이미지-텍스트 간 유사도 분포를 정렬하지만, 단방향 관계 정렬에 한계가 있으며, student 모델의 일반화 성능을 충분히 극대화시키지 못한다는 한계가 있다. 이를 해결하기 위해 CLIP-Relational Distillation(RD)를 제안하며, 기존 CLIP-KD에서 사용한 기법뿐만 아니라 Vertical Relational Distillation(VRD)와 Cross Relational Distillation(XRD)를 통해 teacher-student 및 modality 간 관계를 다뱡향으로 정렬한다. 수평, 수직, 교차 관계를 통합적으로 정렬함으로써, 경량화된 모델의 표현 정합성과 일반화 성능을 향상시켰다. <br>
+
+**[실험 및 기대 효과]** <br>
+
+Teacher 모델을 ViT-B/16으로, Student 모델을 ViT-T/16으로 설정하고, CLIP-RD 방법으로 Knowledge Distillation을 실험한 결과, 기존 선행 연구 논문의 방법론보다  이미지 분류 태스크에서 0.8%p 증가한 성능을 보였다. cross-modal retrieval 태스크에서는 CC3M, MSCOCO, Flickr 세 가지 데이터셋에서 성능을 측정한 결과, 지식 증류를 적용하지 않은 모델(baseline) 대비 평균 12.92%p 증가하였다. zero-shot 이미지 분류의 태스크에서는 8가지의 데이터셋(ImageNet, CIFAR-10/100, EuroSAT, Food101, RESISC45, Sun397, Caltech101)을 사용하여 실험하여, 모든 데이터셋에서 baseline과 기존 선행 연구 논문의 방법론의 성능을 뛰어넘는 결과를 보여주었다. <br>
+
+**[향후 연구 방향성]** <br>
+
+이를 통해서 우리가 제안하는 CLIP-RD가 거대 모델인 CLIP 모델의 지식을 기존 선행연구보다 효과적으로 증류하여, 경량화된 모델의 일반화 성능을 향상시켰음을 입증하였다. 또한 이후 추가적인 실험을 통해 CLIP-RD의 여러 아키텍처에서의 적용성 등을 보다 자세히 입증하고자 한다. |
 | (8) 주요 Link | [GitHub GitHub - Rosieyang01/CLIP-RD](https://github.com/Rosieyang01/CLIP-RD) |
  
 <br>
