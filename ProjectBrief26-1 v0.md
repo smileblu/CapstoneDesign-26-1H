@@ -40,7 +40,7 @@
 |36|[이게되네](#team-36)|  무발화 자폐 아동의 의사표현 어려움 해소를 위한 AI 기반 개인맞춤형 의사소통 어플리케이션 <br>- 단어 확장, 이미지 생성, 음성 출력, 데이터 분석을 통해 문장 생성 및 표현을 지원하는 서비스
 |37|[Optimus Prime](#team-37)| VM별 AI 워크로드 에너지 사용량 예측모델 설계
 |38|[ModalArc](#team-38)| MARS: Modality-Aware Reconfiguration Scheduler for On-device Multi-Modal Inference on Multi-Core NPUs
-|39|[NexStep](#team-39)| 음소 단위 분석을 통한 아동 맞춤형 발음 교정 놀이 앱
+|39|[NexStep](#team-39)| 쑥쑥 : 음소 단위 분석을 통한 아동 맞춤형 발음 교정 놀이 앱
 |40|[MIND](#team-40)| 발 및 발목 엑스레이 영상의 응급도 분류 및 판독 우선순위 결정을 위한 멀티모달 인공지능 모델 개발
 |41|[Flippers](#team-41)| OpenAI 및 Google Map API 기반 사용자 맞춤형 AI 여행 플래너 솔루션
  
